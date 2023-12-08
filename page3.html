@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Favorite Recipe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      border: 2px solid #333;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    .ingredient-image {
+      width: 50px; /* Adjust the size as needed */
+      height: 50px;
+      object-fit: cover; /* Maintain aspect ratio */
+    }
+    .instruction-row {
+      background-color: #eee;
+      font-style: italic;
+    }
+    .finished-dish {
+      width: 100%; /* Adjust the size as needed */
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Favorite Recipe</h1>
+
+  <table>
+    <tr>
+      <th>Ingredient Name</th>
+      <th>Amount</th>
+      <th>Picture of Ingredient</th>
+    </tr>
+    <tr>
+      <td>Ingredient 1</td>
+      <td>100g</td>
+      <td><img src="ingredient1.jpg" alt="Ingredient 1" class="ingredient-image"></td>
+    </tr>
+    <tr>
+      <td>Ingredient 2</td>
+      <td>200ml</td>
+      <td><img src="ingredient2.jpg" alt="Ingredient 2" class="ingredient-image"></td>
+    </tr>
+    <tr>
+      <td>Ingredient 3</td>
+      <td>2 pieces</td>
+      <td><img src="ingredient3.jpg" alt="Ingredient 3" class="ingredient-image"></td>
+    </tr>
+    <!-- Add more rows for other ingredients -->
+    <tr class="instruction-row">
+      <td colspan="3">Mix all ingredients together and bake at 350°F for 30 minutes.</td>
+    </tr>
+    <tr>
+      <td colspan="3"><img src="finished_dish.jpg" alt="Finished Dish" class="finished-dish"></td>
+    </tr>
+  </table>
+<a href=index.html>Back to Home</a>
+</body>
+</html>
